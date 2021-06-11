@@ -22,6 +22,6 @@ app.use(cors());
 
 app.use("/api", paymentRoute);
 
-app.listen(5000, () => {
+app.listen(process.env_PORT || 5000, () => {
   console.log(`App is running at 5000 port`);
 });
